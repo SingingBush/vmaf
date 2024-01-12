@@ -4,7 +4,8 @@ import logging
 
 __copyright__ = "Copyright 2016-2020, Netflix, Inc."
 __license__ = "BSD+Patent"
-__version__ = "2.0.0"
+__version__ = "3.0.0"
+# todo: __version__ should be kept in sync with the libvmaf binary version defined in meson.build
 
 logging.basicConfig()
 logger = logging.getLogger(os.path.splitext(os.path.basename(__file__))[0])

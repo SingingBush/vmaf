@@ -31,6 +31,8 @@ def get_version():
 ext_module = cythonize(['vmaf/core/adm_dwt2_cy.pyx'])
 ext_module[0].include_dirs = [numpy.get_include(), '../libvmaf/src']
 
+print(get_version())
+
 setup(
     name="vmaf",
     version=get_version(),
@@ -43,15 +45,17 @@ setup(
     packages=["vmaf", "vmaf.tools", "vmaf.core", "vmaf.script"],
     include_package_data=True,
     install_requires=[
-        "numpy>=1.18.2",
-        "scipy>=1.4.1",
-        "matplotlib>=3.2.1",
-        "pandas>=1.0.3",
-        "scikit-learn>=0.22.2",
-        "scikit-image>=0.16.2",
-        "h5py>=2.6.0",
-        "sureal>=0.4.2",
-        "dill>=0.3.1",
+        "numpy>=1.26.3",
+        "scipy>=1.11.4",
+        "matplotlib>=3.8.2",
+        "pandas>=2.1.4",
+        "scikit-learn>=1.3.2",
+        "scikit-image>=0.22.0",
+        "h5py>=3.10.0",
+        "sureal>=0.9.0",
+        "dill>=0.3.7",
+        "cython",
+        "wheel"
     ],
     entry_points = {
         'console_scripts': [

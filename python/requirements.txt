@@ -8,6 +8,7 @@ h5py>=3.10.0
 sureal>=0.9.0
 dill>=0.3.7
 cython
+wheel
 PyWavelets==1.5.0
 python-slugify>=8.0.1
 libsvm-official>=3.32.0
