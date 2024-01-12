@@ -9,7 +9,7 @@ as well as a set of tools that allows a user to train and test a custom VMAF mod
 """
 
 import os
-from distutils.core import setup
+from setuptools import setup
 from Cython.Build import cythonize
 import numpy
 
